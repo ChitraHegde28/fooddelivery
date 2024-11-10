@@ -1,0 +1,13 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && node server.js",
+    "start:admin": "cd admin && npm run dev",
+    "start:all": "concurrently \"npm run start:frontend\" \"npm run start:backend\" \"npm run start:admin\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
